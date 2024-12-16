@@ -28,7 +28,6 @@ const TableMain = () => {
             <tr
               key={index}
               className={`border-b ${index % 2 === 0 ? "bg-blue-50" : ""}`}
-
             >
               <td
                 className="px-4 py-2 text-sm underline text-blue-500 font-medium cursor-pointer hover:underline"

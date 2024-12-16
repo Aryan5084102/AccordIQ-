@@ -77,7 +77,7 @@ const Calender = () => {
   <div className="flex flex-col w-full sm:w-1/2 gap-4 overflow-hidden">
     <div className="flex-1">
       <h2 className="text-sm font-bold text-gray-800 mb-2">Upcoming Expirations</h2>
-      <div className="bg-blue-50 p-3 rounded-lg shadow-md h-full">
+      <div className="bg-blue-50 p-3  overflow-y-auto rounded-lg shadow-md h-32">
         {upcomingExpirations.map((item, index) => (
           <div
             key={index}
@@ -93,11 +93,11 @@ const Calender = () => {
     </div>
     <div className="flex-1">
       <h2 className="text-sm font-bold text-gray-800 mb-2">Upcoming Renewals</h2>
-      <div className="bg-blue-50 p-3 rounded-lg shadow-md h-full">
+      <div className="bg-blue-50 p-3 rounded-lg overflow-y-auto  shadow-md h-32">
         {upcomingRenewals.map((item, index) => (
           <div
             key={index}
-            className="flex justify-between items-center bg-blue-100 p-2 mb-2 rounded-md"
+            className="flex justify-between items-center  bg-blue-100 p-2 mb-2 rounded-md"
           >
             <span className="font-medium text-sm text-gray-800">{item.title}</span>
             <span className="bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full">

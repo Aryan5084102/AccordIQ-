@@ -37,7 +37,7 @@ const ContractDetail = () => {
 
         // Show the signature section
         setShowSignatureSection(true);
-
+ 
         // Disable the button
         setIsButtonDisabled(true);
     };
@@ -97,7 +97,7 @@ const ContractDetail = () => {
                             {/* Connecting Pipe */}
                             {index !== statuses.length - 1 && (
                                 <div
-                                    className={`w-16 h-1 ${index < statuses.findIndex((s) => s.state === "pending")
+                                    className={`w-28 h-1 ${index + 1 < statuses.findIndex((s) => s.state === "pending")
                                         ? "bg-teal-500"
                                         : "bg-gray-300"
                                         }`}
